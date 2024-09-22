@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea; /* Nền sáng hơn */
+  line-height: 1.6;
+}
+
+header {
+  background-color: #2cc3f0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+
+h1 {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+nav {
+  background-color: #0de77a;
+  overflow: hidden;
+  display: flex; /* Dùng flexbox để căn ngang */
+  justify-content: space-between; /* Tách biệt phần danh sách và ô tìm kiếm */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 0 20px; /* Thêm khoảng trống ngang cho dễ nhìn */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Dùng flexbox để dễ căn giữa */
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #ffc107; /* Màu vàng khi hover */
+  color: black;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #2196f3; /* Màu xanh dương đậm cho tiêu đề */
+}
+
+.subjects {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subjects li {
+  background-color: #2cc3f0;
+  color: white;
+  margin: 5px 0;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.search-bar {
+  display: flex;
+  margin-left: auto; /* Đẩy ô tìm kiếm sang lề trái */
+}
+
+.search-bar input[type="text"] {
+  padding: 7px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar button {
+  padding: 7px 15px;
+  font-size: 16px;
+  margin-left: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.search-bar button:hover {
+  background-color: #45a049;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.teacher-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.subject {
+  text-align: center;
+  margin: 10px;
+}
+
+.subject img {
+  width: 100px; /* Kích thước ảnh giáo viên và môn học */
+  height: auto;
+  border-radius: 50%; /* Hình tròn cho ảnh giáo viên */
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding: 8px 0;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 15px; /* Giảm padding */
+  background-color: #fff; /* Thay đổi nền sang trắng */
+  border-top: 2px solid #4caf50; /* Đường viền màu xanh rõ hơn */
+  color: #333; /* Màu chữ tối hơn */
+}
+
+#feedback-form {
+  margin-top: 10px; /* Giảm khoảng cách */
+}
+
+#feedback-form label {
+  display: block;
+  margin: 4px 0; /* Giảm khoảng cách giữa label */
+}
+
+#feedback-form input,
+#feedback-form textarea {
+  width: 100%;
+  padding: 6px; /* Giảm padding */
+  margin-bottom: 8px; /* Giảm khoảng cách */
+  border: 1px solid #4caf50; /* Đường viền màu xanh rõ hơn */
+  border-radius: 4px;
+}
+
+#feedback-form button {
+  padding: 8px 12px; /* Giảm kích thước nút */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#feedback-form button:hover {
+  background-color: #45a049;
+}
+
+.review {
+  border: 1px solid #ccc; /* Đường viền để phân biệt */
+  padding: 20px; /* Khoảng cách bên trong */
+  margin: 10px; /* Khoảng cách bên ngoài */
+  border-radius: 8px; /* Bo tròn góc */
+  width: calc(33.33% - 20px); /* Đặt chiều rộng để 3 ô trong một hàng */
+  display: inline-block; /* Hiển thị cạnh nhau */
+  vertical-align: top; /* Căn chỉnh theo chiều dọc */
+  box-sizing: border-box; /* Để padding và border không làm thay đổi kích thước */
+}
+
+.teacher-subjects .subject {
+  border: 1px solid #ccc; /* Đường viền để phân biệt */
+  padding: 20px; /* Khoảng cách bên trong */
+  margin: 10px; /* Khoảng cách bên ngoài */
+  border-radius: 8px; /* Bo tròn góc */
+  width: calc(33.33% - 20px); /* Đặt chiều rộng để 3 ô trong một hàng */
+  display: inline-block; /* Hiển thị cạnh nhau */
+  vertical-align: top; /* Căn chỉnh theo chiều dọc */
+}
+
+.review-image {
+  margin-right: 10px;
+}
+
+.review-image img {
+  width: 80px; /* Kích thước ảnh học sinh */
+  height: 80px; /* Kích thước ảnh học sinh */
+  border-radius: 50%; /* Hình tròn cho ảnh học sinh */
+}
+
+.review-content {
+  flex-grow: 1;
+}
+
+.review p {
+  margin: 5px 0;
+}
+.review:hover {
+  border-color: #4caf50; /* Đổi màu viền khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng cho review */
+}
+.review strong {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.teacher-subjects {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép phần tử nằm bên nhau */
+  overflow-x: auto; /* Thêm cuộn ngang nếu dài */
+  padding-bottom: 10px; /* Khoảng cách dưới cùng */
+}
+
+.subject {
+  flex: 0 0 200px; /* Chiều rộng cố định cho mỗi môn */
+  margin: 10px; /* Khoảng cách giữa các môn */
+  border: 1px solid #ccc; /* Đường viền cho mỗi ô */
+  border-radius: 8px; /* Bo góc */
+  text-align: center; /* Canh giữa nội dung */
+}
+.motivation {
+  font-style: italic; /* Làm cho văn bản nghiêng */
+  color: #555; /* Thay đổi màu sắc cho dễ nhìn */
+  margin-top: 5px; /* Khoảng cách trên */
+}
+.teacher-subjects .subject {
+  background-color: #ffffff; /* Nền trắng cho ô giảng viên */
+  transition: transform 0.3s; /* Thêm hiệu ứng chuyển động */
+}
+
+.teacher-subjects .subject:hover {
+  transform: scale(1.05); /* Phóng to khi hover */
+}
+section {
+  background-color: #fff; /* Nền trắng cho các section */
+  background-image: url("background-pattern.png"); /* Thêm hình nền nếu có */
+  background-size: cover; /* Lấp đầy hình nền */
+}
+.motivation {
+  background-color: #e1f5fe; /* Nền xanh nhạt cho lời động viên */
+  border-left: 4px solid #00bcd4; /* Đường viền trái nổi bật */
+  padding: 10px; /* Khoảng cách bên trong */
+  margin-top: 10px; /* Khoảng cách trên */
+}
+
+.go-to-courses {
+  text-align: center; /* Căn giữa */
+  margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.button {
+  background-color: #4caf50; /* Màu nền */
+  color: white; /* Màu chữ */
+  padding: 12px 20px; /* Khoảng cách */
+  text-decoration: none; /* Bỏ gạch chân */
+  border-radius: 5px; /* Bo góc */
+  transition: background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
+  box-shadow: 0 4px 6px rgba(2, 41, 10, 0.596); /* Đổ bóng */
+  font-size: 16px; /* Kích thước chữ */
+  font-weight: bold; /* Chữ đậm */
+}
+
+.button:hover {
+  background-color: #45a049; /* Màu nền khi hover */
+  transform: translateY(-3px); /* Di chuyển lên một chút khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng lớn hơn khi hover */
+}
+
+.button:active {
+  transform: translateY(1px); /* Di chuyển xuống một chút khi nhấn */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng trở lại bình thường */
+}
+.introduction {
+  display: flex; /* Sử dụng flexbox để căn chỉnh */
+  justify-content: space-between; /* Khoảng cách giữa hai bên */
+  align-items: flex-start; /* Căn chỉnh đầu dòng */
+}
+
+.info-left {
+  width: 45%; /* Chiều rộng của thông tin bên trái */
+}
+
+.image-right {
+  width: 50%; /* Chiều rộng của ảnh bên phải */
+}
+
+.image-right img {
+  max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng */
+  height: auto; /* Giữ tỷ lệ khung hình */
+}

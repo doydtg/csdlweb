@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eduPath - Khóa học lớp 12</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/logo.png" alt="eduPath Logo" />
+      </div>
+      <h1>eduPath</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="/demo/trangchu.html"> Trang chủ </a></li>
+        <li><a href="/demo/gioithieu.html">Giới thiệu</a></li>
+        <li><a href="/demo/khoahoc.html">Khóa học</a></li>
+        <!-- <li><a href="#lienhe">Liên hệ</a></li> -->
+      </ul>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm kiếm môn học..."
+          onkeydown="handleKeyDown(event)"
+        />
+        <button onclick="searchSubject()">Tìm kiếm</button>
+      </div>
+    </nav>
+
+    <section id="gioithieu">
+      <h2>Giới thiệu</h2>
+      <p>
+        Khóa học lớp 12 tại eduPath được thiết kế đặc biệt nhằm cung cấp đầy đủ và sâu sắc kiến thức cho các môn học chính, từ Toán, Văn, Lý, Hóa đến Sinh. 
+        Chúng tôi hiểu rằng kỳ thi THPT Quốc Gia là một bước ngoặt quan trọng trong sự nghiệp học tập của học sinh. Vì vậy, eduPath không chỉ giúp các em nắm vững lý thuyết mà còn trang bị kỹ năng giải quyết vấn đề thông qua các bài tập thực hành phong phú. 
+        Bên cạnh đó, chúng tôi còn cung cấp những phương pháp học tập hiệu quả và tài liệu bổ trợ hữu ích, giúp học sinh tự tin hơn khi bước vào kỳ thi. 
+        Hãy cùng chúng tôi khám phá và chinh phục những kiến thức cần thiết để đạt được thành tích tốt nhất!
+
+
+      </p>
+    </section>
+    <section id="giangvien">
+      <h2>Giáo viên và Môn học</h2>
+      <div class="teacher-subjects">
+        <div class="subject">
+          <a href="/demo/Toanhoc/toanhoc.html">
+            <img src="/img/Thầy cô/Thầy chí.jpg" alt="Toán học" />
+          </a>
+          <h3><a href="/demo/Toanhoc/toanhoc.html">Toán học</a></h3>
+          <p>Giáo viên: <a href="/demo/Toanhoc/toanhoc.html">Thầy Nguyễn Quốc Chí</a></p>
+          <p class="motivation">
+            "Hãy luôn nỗ lực và không ngừng học hỏi, thành công sẽ đến với bạn!"
+          </p>
+        </div>
+        <div class="subject">
+          <a href="/demo/Vanhoc/vanhoc.html">
+            <img src="/img/Thầy cô/Trang.jpg" alt="Ngữ văn" />
+          </a>
+          <h3><a href="/demo/Vanhoc/vanhoc.html">Ngữ văn</a></h3>
+          <p>
+            Giáo viên:
+            <a href="/demo/Vanhoc/vanhoc.html">Cô Triệu Nguyễn Huyền Trang</a>
+            <p class="motivation">"Mỗi trang sách là một cánh cửa mở ra thế giới mới. Hãy khám phá chúng!"</p>
+          </p>
+        </div>
+        <div class="subject">
+          <a href="/demo/Vatly/vatly.html">
+            <img src="/img/Thầy cô/Thầy Tanh.jpg" alt="Vật lý" />
+          </a>
+          <h3><a href="/demo/Vatly/vatly.html">Vật lý</a></h3>
+          <p>Giáo viên: <a href="/demo/Vatly/vatly.html">Thầy Nguyễn Tuấn Anh</a></p>
+          <p class="motivation">"Hãy để trí tò mò dẫn dắt bạn đến với những điều kỳ diệu của khoa học!"</p>
+        </div>
+        <div class="subject">
+          <a href="khoahoc_hoa.html">
+            <img src="/img/Thầy cô/Thầy Thắng.png" alt="Hóa học" />
+          </a>
+          <h3><a href="khoahoc_hoa.html">Hóa học</a></h3>
+          <p>Giáo viên: <a href="khoahoc_hoa.html">Thầy Phạm Thắng</a></p>
+          <p class="motivation">"Hóa học có mặt ở mọi nơi. Hãy tìm hiểu và khám phá nó!"</p>
+        </div>
+        <div class="subject">
+          <a href="khoahoc_sinh.html">
+            <img src="/img/Thầy cô/Thầy Nghệ.jpg" alt="Sinh học" />
+          </a>
+          <h3><a href="khoahoc_sinh.html">Sinh học</a></h3>
+          <p>Giáo viên: <a href="khoahoc_sinh.html">Thầy Phan Khắc Nghệ</a></p>
+          <p class="motivation">"Sống động và đầy màu sắc, hãy yêu thương thiên nhiên và tìm hiểu về nó!"</p>
+        </div>
+        <div class="subject">
+          <a href="khoahoc_anh.html">
+            <img src="/img/Thầy cô/Cô mai Phương.jpg" alt="Tiếng Anh" />
+          </a>
+          <h3><a href="khoahoc_anh.html">Tiếng Anh</a></h3>
+          <p>Giáo viên: <a href="khoahoc_anh.html">Cô Vũ Mai Phương</a></p>
+          <p class="motivation">"Tiếng Anh mở ra cánh cửa đến với thế giới. Hãy kiên trì và bạn sẽ thành công!"</p>
+        </div>
+      </div>
+      <div class="go-to-courses">
+        <a href="./khoahoc.html" class="button">Xem khóa học</a>
+      </div>
+    
+      <h2>Học viên nói gì về eduPath</h2>
+      <div class="reviews">
+        <div class="review">
+          <div class="review-image">
+            <img src="/img/student/Học sinh A.jpg" alt="Nguyễn Ngọc Diệu Huyền" />
+          </div>
+          <div class="review-content">
+            <p>
+              <strong>Nguyễn Ngọc Diệu Huyền</strong> (02/06/2024) - ⭐⭐⭐⭐⭐
+            </p>
+            <p>
+              "Tôi đã cải thiện đáng kể điểm số môn Toán nhờ vào các bài giảng
+              của thầy Chí. Cảm ơn eduPath!"
+            </p>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-image">
+            <img src="/img/student/Học sinh B.jpg" alt="Trần Hoàng Sơn" />
+          </div>
+          <div class="review-content">
+            <p><strong>Trần Hoàng Sơn</strong> (08/07/2024) - ⭐⭐⭐⭐</p>
+            <p>
+              "Chương trình học rất hợp lý và dễ hiểu, giúp tôi tự tin hơn trong
+              kỳ thi."
+            </p>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-image">
+            <img src="/img/student/Học sinh C0.jpg" alt="Lê Hoàng Phương Thảo" />
+          </div>
+          <div class="review-content">
+            <p>
+              <strong>Lê Hoàng Phương Thảo</strong> (05/08/2024) - ⭐⭐⭐⭐⭐
+            </p>
+            <p>
+              "Các thầy cô rất nhiệt tình và có tâm. Tôi rất hài lòng với khóa
+              học này!"
+            </p>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review-image">
+            <img src="/img/student/Học sinh D.jpg" alt="Hoàng Thanh Mai" />
+          </div>
+          <div class="review-content">
+            <p><strong>Hoàng Thanh Mai</strong> (01/09/2024) - ⭐⭐⭐⭐⭐</p>
+            <p>
+              "Tôi cảm thấy tự tin hơn rất nhiều sau khi tham gia khóa học này."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Liên hệ và Phản hồi</h2>
+      <p>
+        Chúng tôi rất mong nhận được ý kiến đóng góp từ bạn để phát triển khóa
+        học tốt hơn nữa!
+      </p>
+      <form id="feedback-form">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Nội dung phản hồi:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Gửi phản hồi</button>
+      </form>
+      <pre>
+
+      </pre>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 eduPath. Tất cả quyền được bảo lưu.</p>
+    </footer>
+    <script>
+      function searchSubject() {
+        const input = document
+          .getElementById("search-input")
+          .value.toLowerCase();
+        const subjects = document.querySelectorAll(".subjects li");
+        let found = false;
+
+        subjects.forEach((subject) => {
+          const subjectText = subject.textContent.toLowerCase();
+          if (subjectText.includes(input)) {
+            subject.style.backgroundColor = "yellow"; // Đánh dấu kết quả tìm được
+            found = true;
+          } else {
+            subject.style.backgroundColor = ""; // Reset lại màu nếu không khớp
+          }
+        });
+
+        if (!found) {
+          alert("Không tìm thấy môn học này!");
+        }
+      }
+    </script>
+  </body>
+</html>

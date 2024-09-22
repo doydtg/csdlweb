@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toán học thầy Chí - eduPath</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      /* Định nghĩa Flexbox để tạo hai cột */
+      .content-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      /* Cột bên trái chứa chương trình bài học */
+      .left-column {
+        width: 55%; /* Điều chỉnh độ rộng */
+        padding-right: 20px;
+        max-height: 600px; /* Giới hạn chiều cao để hiển thị thanh cuộn nếu nội dung dài */
+        overflow-y: auto; /* Thêm thanh cuộn dọc cho cột này */
+      }
+
+      /* Cột bên phải chứa phần giới thiệu */
+      .right-column {
+        width: 40%; /* Điều chỉnh độ rộng lớn hơn */
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(252, 247, 247, 0.1);
+        max-height: 600px; /* Giới hạn chiều cao */
+        overflow-y: auto; /* Thêm thanh cuộn dọc */
+      }
+
+      .chapter h3 {
+        color: #333;
+        margin-top: 10px;
+      }
+
+      .right-column h2 {
+        color: #007bff;
+        font-size: 1.8rem; /* Làm phần giới thiệu to hơn */
+        margin-bottom: 15px;
+      }
+
+      .right-column p {
+        font-size: 1.2rem; /* Làm to chữ phần giới thiệu */
+        line-height: 1.6;
+      }
+      .go-to-courses {
+        text-align: center;
+        margin: 30px 0;
+      }
+
+      .go-to-courses .button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .go-to-courses .button:hover {
+        background-color: #034706;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/logo.png" alt="eduPath Logo" />
+      </div>
+      <h1>Toán học thầy Nguyễn Quốc Chí - eduPath</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/demo/trangchu.html"> Trang chủ </a></li>
+        <li><a href="/demo/gioithieu.html">Giới thiệu</a></li>
+        <li><a href="/demo/khoahoc.html">Khóa học</a></li>
+        <!-- <li><a href="#lienhe">Liên hệ</a></li> -->
+      </ul>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm kiếm môn học..."
+          onkeydown="handleKeyDown(event)"
+        />
+        <button onclick="searchSubject()">Tìm kiếm</button>
+      </div>
+    </nav>
+    <main>
+      <div class="content-container">
+        <!-- Cột bên trái - Chương trình khóa học -->
+        <div class="left-column">
+          <section id="math-course">
+            <h2>Chương trình khóa học Toán học</h2>
+
+            <!-- Chương I -->
+            <div class="chapter">
+              <h3>
+                Chương I: Ứng Dụng Đạo Hàm Để Khảo Sát Và Vẽ Đồ Thị Của Hàm Số
+              </h3>
+              <ul>
+                <li>
+                  <a href="/demo/Toanhoc/Bai1.html"
+                    >Bài 1: Sự Đồng Biến, Nghịch Biến Của Hàm Số</a
+                  >
+                </li>
+                <li>
+                  <a href="baihoc_ungdung_daoham2.html"
+                    >Bài 2: Cực Trị Của Hàm Số</a
+                  >
+                </li>
+                <li>
+                    <a href="baihoc_ungdung_daoham1.html">Bài 3: Giá Trị Lớn Nhất Và Giá Trị Nhỏ Nhất Của Hàm Số</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 4: Đường Tiệm Cận</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 5: Khảo Sát Sự Biến Thiên Và Vẽ Đồ Thị Của Hàm Số</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Ôn Tập Chương I</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Câu Hỏi Trắc Nghiệm Chương I</a>
+                    </li>
+              </ul>
+            </div>
+
+            <!-- Chương II -->
+            <div class="chapter">
+              <h3>Chương II: Hàm Số Lũy Thừa, Hàm Số Mũ Và Hàm Số Lôgarit</h3>
+              <ul>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 1: Lũy Thừa</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 2: Hàm Số Lũy Thừa</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 3: Lôgarit</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 4: Hàm Số Mũ, Hàm Số Lôgarit</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 5: Phương Trình Mũ Và Phương Trình Lôgarit</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Bài 6: Bất Phương Trình Mũ Và Bất Phương Trình Lôgarit</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Ôn Tập Chương II</a>
+                    </li>
+                <li><a href="baihoc_ungdung_daoham1.html">Câu Hỏi Trắc Nghiệm Chương II</a>
+                    </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <!-- Cột bên phải - Giới thiệu chung về Toán học lớp 12 -->
+        <div class="right-column">
+          <h2>Giới thiệu chung về Toán học lớp 12</h2>
+          <p>
+            Chương trình Toán học lớp 12 là bước cuối cùng và quan trọng trong
+            hành trình học Toán bậc trung học phổ thông. Học sinh sẽ được học về
+            các chủ đề cốt lõi như đạo hàm, hàm số lũy thừa, hàm số mũ, và hàm
+            số lôgarit.
+          </p>
+          <p>
+            Các kiến thức này không chỉ giúp học sinh nắm vững lý thuyết mà còn
+            rèn luyện tư duy logic và khả năng giải quyết vấn đề. Đặc biệt,
+            chương trình sẽ giúp học sinh tự tin hơn trong các kỳ thi quan trọng
+            như kỳ thi tốt nghiệp THPT quốc gia.
+          </p>
+          <p>
+            Hãy khám phá các bài học của từng chương và sẵn sàng cho hành trình
+            chinh phục những đỉnh cao kiến thức Toán học!
+          </p>
+        </div>
+      </div>
+      <div class="go-to-courses">
+        <a href="/demo/khoahoc.html" class="button">Quay lại toàn khóa học</a>
+      </div>
+    </main>
+    <p>
+        <pre>
+
+
+
+        </pre>
+    </p>
+
+    <footer>
+      <p>&copy; 2024 eduPath. Tất cả quyền được bảo lưu.</p>
+    </footer>
+  </body>
+</html>

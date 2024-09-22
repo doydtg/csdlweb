@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 1: Sự Đồng Biến, Nghịch Biến Của Hàm Số</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/icon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/icon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/icon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/icon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/icon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/icon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/icon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/icon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/icon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      /* CSS cho phần bài toán lớp 12 */
+      .left-sidebar {
+        width: 20%;
+        float: left;
+        padding: 20px;
+        background-color: #f4f4f4;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .left-sidebar ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .left-sidebar ul li {
+        margin: 10px 0;
+      }
+
+      .left-sidebar ul li a {
+        text-decoration: none;
+        color: #007bff;
+        transition: color 0.3s ease;
+      }
+
+      .left-sidebar ul li a:hover {
+        color: #0056b3;
+      }
+
+      /* Phần nội dung chính */
+      .main-content {
+        width: 75%;
+        float: right;
+        padding: 20px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 600px; /* Tăng chiều cao của video */
+      }
+
+      /* Phần tài liệu bài học */
+      .document-link {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+
+      /* Phần điều hướng bài học */
+      .navigation {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* Clearfix để dọn dẹp float */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="/logo.png" alt="eduPath Logo" />
+      </div>
+      <h1>Bài 1: Sự Đồng Biến, Nghịch Biến Của Hàm Số</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/demo/trangchu.html"> Trang chủ </a></li>
+        <li><a href="/demo/gioithieu.html">Giới thiệu</a></li>
+        <li><a href="/demo/khoahoc.html">Khóa học</a></li>
+        <!-- <li><a href="#lienhe">Liên hệ</a></li> -->
+      </ul>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tìm kiếm môn học..."
+          onkeydown="handleKeyDown(event)"
+        />
+        <button onclick="searchSubject()">Tìm kiếm</button>
+      </div>
+    </nav>
+    <main class="clearfix">
+      <!-- Cột bên trái - Danh sách các bài toán lớp 12 -->
+      <div class="left-sidebar">
+        <h3>
+            Chương I: Ứng Dụng Đạo Hàm Để Khảo Sát Và Vẽ Đồ Thị Của Hàm Số
+          </h3>
+          <ul>
+            <li>
+              <a href="/demo/Toanhoc/Bai1.html"
+                >Bài 1: Sự Đồng Biến, Nghịch Biến Của Hàm Số</a
+              >
+            </li>
+            <li>
+              <a href="baihoc_ungdung_daoham2.html"
+                >Bài 2: Cực Trị Của Hàm Số</a
+              >
+            </li>
+            <li>
+                <a href="baihoc_ungdung_daoham1.html">Bài 3: Giá Trị Lớn Nhất Và Giá Trị Nhỏ Nhất Của Hàm Số</a>
+                </li>
+            <li><a href="baihoc_ungdung_daoham1.html">Bài 4: Đường Tiệm Cận</a>
+                </li>
+            <li><a href="baihoc_ungdung_daoham1.html">Bài 5: Khảo Sát Sự Biến Thiên Và Vẽ Đồ Thị Của Hàm Số</a>
+                </li>
+            <li><a href="baihoc_ungdung_daoham1.html">Ôn Tập Chương I</a>
+                </li>
+            <li><a href="baihoc_ungdung_daoham1.html">Câu Hỏi Trắc Nghiệm Chương I</a>
+                </li>
+          </ul>
+      </div>
+
+      <!-- Cột bên phải - Video bài giảng -->
+      <div class="main-content">
+        <h2>Video Bài Giảng</h2>
+        <iframe
+          src="https://www.youtube.com/embed/7ysjiFV5XE4?list=PLu1jlTqz1F8RVEDV6S_thUSvX2Klt1ERb"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+        <!-- Tài liệu bài học -->
+        <div class="document-link">
+          <p>
+            <a href="/demo/Toanhoc/detoan.pdf" target="_blank"
+              >Tài liệu khóa học: </a
+            >
+          </p>
+        </div>
+
+        <!-- Điều hướng bài học -->
+        <div class="navigation">
+          <a href="/demo/Toanhoc/toanhoc.html" class="button">Bài học trước</a>
+          <a href="/demo/Toanhoc/Bai2.html" class="button">Bài tiếp theo</a>
+        </div>
+      </div>
+    </main>
+    <p>
+        <pre>
+
+
+        </pre>
+    </p>
+
+    <footer>
+      <p>&copy; 2024 eduPath. Tất cả quyền được bảo lưu.</p>
+    </footer>
+  </body>
+</html>
